@@ -9,11 +9,19 @@ interface ICard {
 
 const Card = ({ img, title, category }: ICard) => {
   return (
-    <div className="w-full sm:w-[calc(33.33%-1rem)] md:w-[calc(25%-1rem)] lg:w-[calc(20%-1rem)] mb-4">
+    <div className="w-full sm:w-[calc(100%-1rem)] md:w-[calc(100%-1rem)] lg:w-full mb-4">
       <div className="mb-4">
-        <Image src={img} width={441} height={441} alt="product image" />
+        {/* Ensure image is responsive and covers container */}
+        <Image
+          src={img}
+          width={441}
+          height={441}
+          alt="product image"
+          className="w-full h-auto object-cover"
+        />
       </div>
       <div>
+        {/* Title text size scales with screen size */}
         <p className="font-helvetica-medium text-[15px] sm:text-[14px] lg:text-[16px]">
           {title}
         </p>

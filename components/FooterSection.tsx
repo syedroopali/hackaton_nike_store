@@ -51,8 +51,8 @@ const links = [
 
 const FooterSection = () => {
   return (
-    <div className="w-full bg-black text-white px-4 sm:px-2 md:px-0">
-      <div className="w-full lg:w-[84rem] m-auto mb-10">
+    <div className="w-full bg-black text-white px-4 sm:px-2 md:px-2 xl:px-0">
+      <div className="w-full xl:w-[84rem] m-auto mb-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:w-[750px] mb-6 lg:mb-0">
             <div>
@@ -77,7 +77,7 @@ const FooterSection = () => {
               />
             </div>
           </div>
-          <div className="mt-6 lg:mt-12 self-start">
+          <div className="mt-6 lg:mt-12 self-center md:self-start">
             <Image
               src="/social.png"
               width={337}
@@ -89,7 +89,7 @@ const FooterSection = () => {
       </div>
 
       {/* ///////////////////////// */}
-      <div className="w-full lg:w-[84rem] m-auto flex flex-col lg:flex-row items-center justify-between text-center lg:text-left">
+      <div className="w-full xl:w-[84rem] m-auto flex flex-col lg:flex-row items-center justify-between text-center lg:text-left">
         <div className="flex items-center justify-center gap-4 mb-4 lg:mb-0">
           <Image
             src={"/icons/locationIcon.png"}

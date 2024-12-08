@@ -3,11 +3,11 @@ import React from "react";
 
 const NavigationButtons = ({ text }: { text: string }) => {
   return (
-    <div className="sm:flex items-center justify-center gap-4 flex-wrap hidden">
-      <p className="text-[15px] font-helvetica-medium sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]">
+    <div className="hidden flex-wrap items-center justify-center gap-4 sm:flex">
+      <p className="font-helvetica-medium text-[15px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]">
         {text}
       </p>
-      <button className="rounded-full w-12 h-12 sm:w-10 sm:h-10 flex items-center justify-center bg-[#F5F5F5]">
+      <button className="flex size-12 items-center justify-center rounded-full bg-[#F5F5F5] sm:size-10">
         <Image
           src="/icons/leftArrow.png"
           alt="left arrow icon"
@@ -16,7 +16,7 @@ const NavigationButtons = ({ text }: { text: string }) => {
         />
         <p className="hidden">a</p>
       </button>
-      <button className="rounded-full w-12 h-12 sm:w-10 sm:h-10 bg-[#E5E5E5] flex justify-center items-center">
+      <button className="flex size-12 items-center justify-center rounded-full bg-[#E5E5E5] sm:size-10">
         <Image
           src="/icons/rightArrow.png"
           alt="right arrow icon"

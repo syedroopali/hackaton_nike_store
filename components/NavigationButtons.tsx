@@ -14,6 +14,7 @@ const NavigationButtons = ({ text }: { text: string }) => {
           width={8}
           height={15.5}
         />
+        <p className="hidden">a</p>
       </button>
       <button className="rounded-full w-12 h-12 sm:w-10 sm:h-10 bg-[#E5E5E5] flex justify-center items-center">
         <Image
@@ -22,6 +23,7 @@ const NavigationButtons = ({ text }: { text: string }) => {
           width={8}
           height={15.5}
         />
+        <p className="hidden">a</p>
       </button>
     </div>
   );

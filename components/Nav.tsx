@@ -1,7 +1,9 @@
+import React from "react";
+
 import { LINKS_CATEGORIES, LINKS_NAV } from "@/constants/links";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Nav = () => {
   return (

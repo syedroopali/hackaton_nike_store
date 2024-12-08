@@ -1,5 +1,3 @@
-import path from "path";
-
 export const LINKS_NAV = [
   {
     title: "find a store",

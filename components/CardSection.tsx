@@ -19,6 +19,7 @@ const CardSection = () => {
         {Data.map((product, i) => (
           <Card
             key={i}
+            i={i}
             img={product.img}
             title={product.title}
             category={product.category}

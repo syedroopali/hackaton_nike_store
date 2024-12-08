@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface IProductCard {
   img: string;
@@ -6,11 +7,12 @@ interface IProductCard {
   tag: string;
   price: string;
   color: string;
+  id: string;
 }
-
 const ProductCard = ({ i, product }: { i: number; product: IProductCard }) => {
   return (
-    <div
+    <Link
+      href={`/product/${product.id} `}
       key={i}
       className="mb-4 rounded-md bg-white p-4 shadow-sm transition-shadow duration-300 hover:shadow-lg"
     >
@@ -40,7 +42,7 @@ const ProductCard = ({ i, product }: { i: number; product: IProductCard }) => {
           {product.price}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

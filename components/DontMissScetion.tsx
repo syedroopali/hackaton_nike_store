@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const DontMissScetion = () => {
@@ -30,9 +31,12 @@ const DontMissScetion = () => {
             Your built-to-last, all-week wears—but with style only Jordan Brand
             can deliver.
           </p>
-          <button className="rounded-full border border-black bg-black px-6 py-2 text-[15px] text-white transition-all hover:bg-white hover:text-black sm:text-base">
+          <Link
+            href={"/product"}
+            className="rounded-full border border-black bg-black px-6 py-2 text-[15px] text-white transition-all hover:bg-white hover:text-black sm:text-base"
+          >
             Shop
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,13 @@
 import Image from "next/image";
 
+interface IProductCard {
+  img: string;
+  title: string;
+  tag: string;
+  price: string;
+  color: string;
+}
+
 const ProductCard = ({ i, product }: { i: number; product: IProductCard }) => {
   return (
     <div

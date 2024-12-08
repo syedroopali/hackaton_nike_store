@@ -20,27 +20,27 @@ export const LINKS_NAV = [
 export const LINKS_CATEGORIES = [
   {
     title: "new & featured",
-    path: "/",
+    path: "/product",
   },
   {
     title: "men",
-    path: "/",
+    path: "/product",
   },
   {
     title: "women",
-    path: "/",
+    path: "/product",
   },
   {
     title: "kids",
-    path: "/",
+    path: "/product",
   },
   {
     title: "sale",
-    path: "/",
+    path: "/product",
   },
 
   {
     title: "snkrs",
-    path: "/",
+    path: "/product",
   },
 ];

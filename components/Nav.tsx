@@ -9,9 +9,9 @@ const Nav = () => {
       {/* Top Navigation */}
       <div className="w-full bg-gray-100">
         <div className="mx-auto flex h-[2.24rem] max-w-screen-xl items-center justify-between px-4 sm:px-8">
-          <div>
+          <Link href={"/"}>
             <Image src="/icons/man.png" width={24} height={24} alt="man icon" />
-          </div>
+          </Link>
           <ul className="hidden md:flex">
             {LINKS_NAV.map((link) => (
               <Link
@@ -30,14 +30,14 @@ const Nav = () => {
       <div className="w-full bg-white">
         <div className="mx-auto grid h-[60px] max-w-screen-xl grid-cols-3 items-center px-4 sm:px-8">
           {/* Logo */}
-          <div className="flex items-center justify-start">
+          <Link href={"/"} className="flex items-center justify-start">
             <Image
               src="/icons/nikelogo.png"
               width={58.85}
               height={20.54}
               alt="logo"
             />
-          </div>
+          </Link>
 
           {/* Navigation Links */}
           <ul className="hidden items-center justify-center gap-6 md:flex">

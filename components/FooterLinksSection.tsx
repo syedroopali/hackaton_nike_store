@@ -30,7 +30,7 @@ const FooterLinksSection = () => {
           <LinksMap num={2} />
         </div>
         <div>
-          <p className="font-helvetica-medium text-[15px] mb-6">Kid's</p>
+          <p className="font-helvetica-medium text-[15px] mb-6">Kids</p>
           <LinksMap num={3} />
         </div>
       </div>

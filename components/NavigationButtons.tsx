@@ -3,7 +3,7 @@ import React from "react";
 
 const NavigationButtons = ({ text }: { text: string }) => {
   return (
-    <div className="flex items-center justify-center gap-4 flex-wrap">
+    <div className="sm:flex items-center justify-center gap-4 flex-wrap hidden">
       <p className="text-[15px] font-helvetica-medium sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px]">
         {text}
       </p>

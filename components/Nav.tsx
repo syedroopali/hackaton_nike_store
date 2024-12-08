@@ -12,7 +12,7 @@ const Nav = () => {
           <div>
             <Image src="/icons/man.png" width={24} height={24} alt="man icon" />
           </div>
-          <ul className="hidden sm:flex">
+          <ul className="hidden md:flex">
             {LINKS_NAV.map((link) => (
               <Link
                 key={link.path}
@@ -63,7 +63,7 @@ const Nav = () => {
               />
               <input
                 placeholder="Search"
-                className="bg-transparent placeholder-gray-500 outline-none text-sm w-20 md:w-40"
+                className="bg-transparent placeholder-gray-500 outline-none text-sm w-52 md:w-45 lg:w-40 "
               />
             </div>
             <div className="flex gap-4">

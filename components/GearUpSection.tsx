@@ -19,7 +19,7 @@ const GearUpSection = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="flex w-full flex-wrap justify-center gap-4 sm:justify-start">
+        <div className="flex w-full flex-wrap justify-center gap-4 sm:flex-nowrap sm:justify-start">
           {DataGearUp.map((d, i) => (
             <Card key={i} img={d.img} title={d.title} category={d.category} />
           ))}

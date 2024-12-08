@@ -7,7 +7,7 @@ interface ICard {
   category: string;
 }
 
-const Card = ({ img, title, category, i }: ICard) => {
+const Card = ({ img, title, category }: ICard) => {
   return (
     <Link
       href={`/product`}

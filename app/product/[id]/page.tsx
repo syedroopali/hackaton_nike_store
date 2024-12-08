@@ -3,19 +3,11 @@ import React from "react";
 
 import { ProductPageData } from "@/lib/productData";
 
-const page = async ({ params }: { params: { id: string } }) => {
+const page = async ({ params }: any) => {
   const res = await params;
-  const id = res.id;
+  const resId = res.id;
 
-  const clickedProduct: {
-    id: string;
-    img: string;
-    title: string;
-    tag: string;
-    color: string;
-    price: string;
-    description: string;
-  } = ProductPageData.find((p) => p.id === id);
+  const clickedProduct: any = ProductPageData.find((p) => p.id === resId);
 
   return (
     <div className=" flex items-center justify-center">

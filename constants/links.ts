@@ -13,7 +13,7 @@ export const LINKS_NAV = [
   },
   {
     title: "sign in",
-    path: "sign-in",
+    path: "/sign-in",
   },
 ];
 

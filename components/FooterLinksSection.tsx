@@ -7,9 +7,9 @@ const Links = [
   ["All Clothing", " Modest Wear", "Hoodies & Pullovers", "Shirts & Tops"],
   [
     "Infant & Toddler Shoes",
-    "Kids' Shoes",
-    "Kids' Jordan Shoes",
-    "Kids' Basketball Shoes",
+    "Kids Shoes",
+    "Kids Jordan Shoes",
+    "Kids Basketball Shoes",
   ],
 ];
 

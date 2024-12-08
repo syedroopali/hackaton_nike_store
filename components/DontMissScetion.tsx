@@ -6,7 +6,7 @@ const DontMissScetion = () => {
     <div className="mx-auto mb-16 w-full max-w-screen-xl px-4">
       {/* Section Title */}
       <h2 className="mb-3 text-center font-helvetica-medium text-[22px] sm:text-left">
-        Don't miss
+        Dont miss
       </h2>
 
       <div>

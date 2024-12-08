@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+
 import localFont from "next/font/local";
+
+import FooterSection from "@/components/FooterSection";
 import Nav from "@/components/Nav";
 import "./globals.css";
-import FooterSection from "@/components/FooterSection";
 
 const helveticaThin = localFont({
   src: "./fonts/HelveticaNeueThin.otf",

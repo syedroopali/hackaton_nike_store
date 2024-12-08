@@ -1,5 +1,3 @@
-import React from "react";
-
 import { LINKS_CATEGORIES, LINKS_NAV } from "@/constants/links";
 
 import Image from "next/image";

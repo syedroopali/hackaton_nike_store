@@ -1,22 +1,21 @@
-import Image from "next/image";
-import React from "react";
-import Card from "./Card";
 import { Data } from "@/lib/productData";
+
+import Card from "./Card";
 import NavigationButtons from "./NavigationButtons";
 
 const CardSection = () => {
   return (
-    <div className="w-full max-w-screen-xl mx-auto mb-16 px-4 sm:px-8">
+    <div className="mx-auto mb-16 w-full max-w-screen-xl px-4 sm:px-8">
       {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <p className="text-[1.375rem] font-helvetica-medium">Best of Air Max</p>
+      <div className="mb-4 flex items-center justify-between">
+        <p className="font-helvetica-medium text-[1.375rem]">Best of Air Max</p>
         <div className="flex items-center justify-center gap-4">
           <NavigationButtons text={"Shop"} />
         </div>
       </div>
 
       {/* Product Cards */}
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
         {Data.map((product, i) => (
           <Card
             key={i}

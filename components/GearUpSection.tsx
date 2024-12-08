@@ -1,26 +1,25 @@
-import React from "react";
-import NavigationButtons from "./NavigationButtons";
-import Card from "./Card";
+import { DataGearUp } from "@/lib/productData";
 
-import { Data, DataGearUp } from "@/lib/productData";
+import Card from "./Card";
+import NavigationButtons from "./NavigationButtons";
 
 const GearUpSection = () => {
   return (
-    <div className="w-full max-w-screen-xl mx-auto mb-16 px-4">
+    <div className="mx-auto mb-16 w-full max-w-screen-xl px-4">
       {/* Gear Up Title */}
-      <p className="font-helvetica-medium text-[23px] mb-4 text-center sm:text-left">
+      <p className="mb-4 text-center font-helvetica-medium text-[23px] sm:text-left">
         Gear Up
       </p>
 
       <div className="mb-4">
         {/* Navigation Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2 mb-4">
+        <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-2">
           <NavigationButtons text={"Shop Men's"} />
           <NavigationButtons text={"Shop Women's"} />
         </div>
 
         {/* Product Cards */}
-        <div className="flex flex-wrap justify-center sm:justify-start gap-4 w-full">
+        <div className="flex w-full flex-wrap justify-center gap-4 sm:justify-start">
           {DataGearUp.map((d, i) => (
             <Card key={i} img={d.img} title={d.title} category={d.category} />
           ))}

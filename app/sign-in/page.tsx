@@ -63,7 +63,7 @@ function page() {
 
             <div className="mb-3 flex w-full items-center justify-center text-[12px] text-[#8D8D8D] sm:w-[269px]">
               <p className="text-center">
-                By logging in, you agree to Nike's Privacy Policy and Terms of
+                By logging in, you agree to Nikes Privacy Policy and Terms of
                 Use.
               </p>
             </div>

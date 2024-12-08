@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { title } from "process";
 import React from "react";
 
 const links = [
@@ -52,11 +51,11 @@ const links = [
 
 const FooterSection = () => {
   return (
-    <div className="w-full bg-black text-white">
-      <div className="w-[84rem] m-auto mb-10">
-        <div className="flex items-center justify-between">
-          <div className="grid grid-cols-3 w-[750px] ">
-            <div className="">
+    <div className="w-full bg-black text-white px-4 sm:px-2 md:px-0">
+      <div className="w-full lg:w-[84rem] m-auto mb-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:w-[750px] mb-6 lg:mb-0">
+            <div>
               <p className="text-[10px] mb-4 mt-12">FIND A STORE</p>
               <LinkMap
                 no={0}
@@ -78,7 +77,7 @@ const FooterSection = () => {
               />
             </div>
           </div>
-          <div className="mt-12 self-start">
+          <div className="mt-6 lg:mt-12 self-start">
             <Image
               src="/social.png"
               width={337}
@@ -88,9 +87,10 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
+
       {/* ///////////////////////// */}
-      <div className="w-[84rem] m-auto flex items-center justify-between">
-        <div className="flex items-center justify-center gap-4">
+      <div className="w-full lg:w-[84rem] m-auto flex flex-col lg:flex-row items-center justify-between text-center lg:text-left">
+        <div className="flex items-center justify-center gap-4 mb-4 lg:mb-0">
           <Image
             src={"/icons/locationIcon.png"}
             width={9.38}
@@ -102,17 +102,29 @@ const FooterSection = () => {
             &copy; 2023 Nike, Inc. All Rights Reserved
           </p>
         </div>
-        <div className="flex items-center justify-between gap-4 text-[#7E7E7E] ">
-          <Link href={"/"} className="hover:text-white transition-all">
+        <div className="flex items-center justify-between gap-4 text-[#7E7E7E] flex-wrap ">
+          <Link
+            href={"/"}
+            className="hover:text-white transition-all mb-2 lg:mb-0"
+          >
             Guides
           </Link>
-          <Link href={"/"} className="hover:text-white transition-all">
+          <Link
+            href={"/"}
+            className="hover:text-white transition-all mb-2 lg:mb-0"
+          >
             Terms of Sales
           </Link>
-          <Link href={"/"} className="hover:text-white transition-all">
+          <Link
+            href={"/"}
+            className="hover:text-white transition-all mb-2 lg:mb-0"
+          >
             Terms of Use
           </Link>
-          <Link href={"/"} className="hover:text-white transition-all">
+          <Link
+            href={"/"}
+            className="hover:text-white transition-all mb-2 lg:mb-0"
+          >
             Nike Privacy Policy
           </Link>
         </div>
@@ -136,7 +148,7 @@ const LinkMap = ({
           key={i}
           className={`text-[10px] text-white ${otherClasses} transition-all`}
         >
-          {link.title}{" "}
+          {link.title}
         </Link>
       ))}
     </ul>

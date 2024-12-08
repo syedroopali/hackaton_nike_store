@@ -3,10 +3,11 @@ import React from "react";
 import Card from "./Card";
 import { Data } from "@/lib/productData";
 import NavigationButtons from "./NavigationButtons";
-import { text } from "stream/consumers";
+
 const CardSection = () => {
   return (
-    <div className="w-[84rem] m-auto mb-16">
+    <div className="w-full max-w-screen-xl mx-auto mb-16 px-4 sm:px-8">
+      {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <p className="text-[1.375rem] font-helvetica-medium">Best of Air Max</p>
         <div className="flex items-center justify-center gap-4">
@@ -14,7 +15,8 @@ const CardSection = () => {
         </div>
       </div>
 
-      <ul className="flex gap-3">
+      {/* Product Cards */}
+      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {Data.map((product, i) => (
           <Card
             key={i}
